@@ -3,6 +3,7 @@ import get from "../get.js"
 
 const expect = chai.expect
 const should = chai.should()
+const assert = chai.assert
 
 
 const items = { 'category': [{ 'SaladFarmer2': { 'price': 2.99 } }] }
@@ -19,7 +20,7 @@ describe("Get tests", () => {
     });
 
     it("When trying to get from non defined object", () =>{
-        should.exist(expect(function() {get(items3 , 'category[0].SaladFarmer2.price', 3.99)}).to.throw(ReferenceError))
+        assert.throws((function() {get(items3 , 'category[0].SaladFarmer2.price', 3.99)}), ReferenceError)
     });
 
     it("When trying to get from empty object", () =>{
