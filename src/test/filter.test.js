@@ -15,7 +15,7 @@ const items = [{ 'item': 'es', 'sale': false},
 describe("Filter tests", () => {
 
     it("Item doesn't have the searched property", () =>{
-        expect(filter(items[0], ({ sale }) => sale)).to.eql([[]])
+        should.exist(expect(filter(items[0], ({ sale }) => sale)).to.eql([[]]))
     });
 
     it("Item has the searched property", () =>{
@@ -23,7 +23,7 @@ describe("Filter tests", () => {
     });
 
     it("Item category doen't exist on any item", () =>{
-        expect(filter(items, ({ food }) => food)).to.eql([[]])
+        should.exist(expect(filter(items, ({ food }) => food)).to.eql([[]]))
     });
 
     it("Items array have a duplicate item", () =>{

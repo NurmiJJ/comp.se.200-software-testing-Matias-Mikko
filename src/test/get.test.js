@@ -19,10 +19,10 @@ describe("Get tests", () => {
     });
 
     it("When trying to get from non defined object", () =>{
-        expect(function() {get(items3 , 'category[0].SaladFarmer2.price', 3.99)}).to.throw(ReferenceError)
+        should.exist(expect(function() {get(items3 , 'category[0].SaladFarmer2.price', 3.99)}).to.throw(ReferenceError))
     });
 
     it("When trying to get from empty object", () =>{
-        expect(get(items2 , 'category[0].SaladFarmer2.price')).to.equal()
+        should.exist(expect(get(items2 , 'category[0].SaladFarmer2.price')).to.equal())
     });
 })
