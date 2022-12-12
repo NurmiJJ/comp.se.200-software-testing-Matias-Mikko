@@ -33,5 +33,5 @@ jobs:
     - run: npm install c8 --save-dev 
     - run: npm install coveralls --save-dev
     - run: npm install mocha-lcov-reporter -- save-dev
-    - run: npm coverage
-    - run: npm coverage-report
+    - run: npm run coverage
+    - run: npm run coverage-report
