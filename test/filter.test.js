@@ -1,5 +1,5 @@
 import chai from "chai"
-import filter from "../filter.js"
+import filter from "../src/filter.js"
 
 const expect = chai.expect
 const should = chai.should()

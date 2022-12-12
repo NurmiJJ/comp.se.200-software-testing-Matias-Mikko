@@ -1,5 +1,5 @@
 import chai from "chai"
-import get from "../get.js"
+import get from "../src/get.js"
 
 const expect = chai.expect
 const should = chai.should()
