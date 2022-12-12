@@ -21,7 +21,7 @@ describe("Get tests", () => {
 
     it("When trying to get from non defined object", () =>{
         assert.throws((function() {get(items3 , 'category[0].SaladFarmer2.price', 3.99)}), ReferenceError)
-    });
+    });a
 
     it("When trying to get from empty object", () =>{
         should.exist(expect(get(items2 , 'category[0].SaladFarmer2.price')).to.equal())

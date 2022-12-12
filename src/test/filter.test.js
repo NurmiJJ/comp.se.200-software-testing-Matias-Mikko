@@ -23,7 +23,7 @@ describe("Filter tests", () => {
     });
 
     it("Item category doen't exist on any item", () =>{
-        should.exist(expect(filter(items, ({ food }) => food)).to.eql([[]]))
+        should.exist(filter(items, ({ food }) => food))
     });
 
     it("Items array have a duplicate item", () =>{
