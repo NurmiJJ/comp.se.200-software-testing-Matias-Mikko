@@ -11,7 +11,7 @@ const items2 = {}
 describe("Get tests", () => {
     
     it("Default value is not set and search value is undefined", () =>{
-        expect(get(items , 'category.SaladFarmer2.price')).to.eql()
+        should.exist(expect(get(items , 'category.SaladFarmer2.price')).to.eql())
     });
 
     it("Default value is set and search value is undefined", () =>{
