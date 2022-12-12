@@ -1,5 +1,5 @@
 import chai from "chai"
-import eq from "../eq.js"
+import eq from "../src/eq.js"
 
 const expect = chai.expect
 
