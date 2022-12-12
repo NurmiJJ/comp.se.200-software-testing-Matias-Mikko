@@ -19,7 +19,7 @@ describe("Filter tests", () => {
     });
 
     it("Item has the searched property", () =>{
-        expect(filter(items, ({ sale }) => sale)).to.eql([{ 'item': 'mikropizza', 'sale': true, 'shippable': false}])
+        should.exist(expect(filter(items, ({ sale }) => sale)).to.eql([{ 'item': 'mikropizza', 'sale': true, 'shippable': false}]))
     });
 
     it("Item category doen't exist on any item", () =>{
@@ -27,7 +27,7 @@ describe("Filter tests", () => {
     });
 
     it("Items array have a duplicate item", () =>{
-        expect(filter(items, ({ shippable }) => shippable)).to.eql([{ 'item': 'gingerbread', 'sweet': true, 'shippable': true },
-        { 'item': 'gingerbread', 'sweet': true, 'shippable': true}])
+        should.exist(expect(filter(items, ({ shippable }) => shippable)).to.eql([{ 'item': 'gingerbread', 'sweet': true, 'shippable': true },
+        { 'item': 'gingerbread', 'sweet': true, 'shippable': true}]))
     });
    })

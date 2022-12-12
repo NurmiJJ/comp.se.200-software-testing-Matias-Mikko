@@ -15,7 +15,7 @@ describe("Get tests", () => {
     });
 
     it("Default value is set and search value is undefined", () =>{
-        expect(get(items , 'category[0].SaladFarmer2.price', 3.99)).to.equal(3.99)
+        should.exist(expect(get(items , 'category[0].SaladFarmer2.price', 3.99)).to.equal(3.99))
     });
 
     it("When trying to get from non defined object", () =>{
