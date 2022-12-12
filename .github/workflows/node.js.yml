@@ -35,3 +35,9 @@ jobs:
     - run: npm install mocha-lcov-reporter -- save-dev
     - run: npm run coverage
     - run: npm run coverage-report
+
+
+    - name: Coveralls
+      uses: coverallsapp/github-action@master
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
