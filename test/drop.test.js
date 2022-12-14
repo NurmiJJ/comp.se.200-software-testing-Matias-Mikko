@@ -7,6 +7,7 @@ const assert = chai.assert
 
 var items = ["cucumber", "tomato", "potato", "wheat"]
 var items2 = []
+var items3 = ["tomato"]
 
 describe("Drop tests", () => {
 
@@ -26,5 +27,20 @@ describe("Drop tests", () => {
         expect(drop(items2, 2)).to.eql([])
     });
 
+    // EXTRAS which weren't planned
+    it("Dropping without giving the amount to drop", () => {
+        expect(drop(items)).to.eql(["tomato", "potato", "wheat"])
+    });
 
+    it("Dropping with another array", () => {
+        expect(drop(items, items3)).to.eql(items)
+    });
+
+    it("Dropping from null", () => {
+        expect(drop(null, 1)).to.eql([])
+    });
+
+    it("Dropping with null", () => {
+        expect(drop(items, null)).to.eql(items)
+    });
 })
