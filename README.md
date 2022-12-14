@@ -11,3 +11,5 @@ and LICENSE file.
 Source code folder contains a separate license file that must **NOT** be removed under any circumstances!
 Removing this license file directly violates terms and conditions of the software under testing.
 Individuals who remove or modify the license file will also carry the consequences.
+
+[![Coverage Status](https://coveralls.io/repos/github/NurmiJJ/comp.se.200-software-testing-Matias-Mikko/badge.svg?branch=main)](https://coveralls.io/github/NurmiJJ/comp.se.200-software-testing-Matias-Mikko?branch=main)
