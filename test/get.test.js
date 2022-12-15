@@ -9,18 +9,6 @@ const assert = chai.assert
 const items = { 'category': [{ 'SaladFarmer2': { 'price': 2.99 } }] }
 const items2 = {}
 
-// const object = { 'a': [{ 'b': { 'c': 3 } }] }
-//
-// get(object, 'a[0].b.c')
-// // => 3
-//
-// get(object, ['a', '0', 'b', 'c'])
-// // => 3
-//
-// get(object, 'a.b.c', 'default')
-// // => 'default'
-///
-
 describe("Get tests", () => {
 
     it("Default value is not set and search value is undefined", () => {
