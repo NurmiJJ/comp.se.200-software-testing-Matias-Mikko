@@ -29,4 +29,33 @@ describe("isEmpty tests", () => {
     it("Empty String with one space", () => {
         expect(isEmpty(" ")).to.equal(false)
     });
+
+    // EXTRAS which weren't planned
+    it("Undefined object", () => {
+        expect(isEmpty()).to.equal(true)
+    });
+
+    it("Empty Array", () => {
+        expect(isEmpty([])).to.equal(true)
+    });
+    it("Empty Map", () => {
+        expect(isEmpty([{}])).to.equal(false)
+    });
+
+    it("Number", () => {
+        expect(isEmpty(123)).to.equal(true)
+    });
+
+    it("Trying to get key which doesn't exist in the map", () => {
+        expect(isEmpty(nulls_map.get(" "))).to.equal(true)
+    });
+
+    it("Trying to get value which doesn't exist in the array", () => {
+        expect(isEmpty(nulls[6])).to.equal(true)
+    });
+
+    it("boolean", () => {
+        expect(isEmpty(true)).to.equal(true)
+    });
+
 })
