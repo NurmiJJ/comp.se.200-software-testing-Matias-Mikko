@@ -30,4 +30,9 @@ describe("Filter tests", () => {
         should.exist(expect(filter(items, ({ shippable }) => shippable)).to.eql([{ 'item': 'gingerbread', 'sweet': true, 'shippable': true },
         { 'item': 'gingerbread', 'sweet': true, 'shippable': true}]))
     });
+
+     // EXTRAS which weren't planned
+     it("Filtering null object", () => {
+        should.exist(expect(filter(null, ['category', '0', 'SaladFarmer2','price'])).to.eql([[]]))
+    });
    })
