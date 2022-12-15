@@ -28,7 +28,7 @@ describe("Divide tests", () => {
 
     /*
     -- Failing
-    it("Divisor is a very big number"", () =>{
+    it("Divisor is a very big number", () =>{
         expect(divide(0,99999999999)).to.equal(0)
     });
     */
@@ -40,5 +40,17 @@ describe("Divide tests", () => {
     });
     */
 
+    /*
+    -- Failing
+    it("Dividend is zero", () =>{
+        expect(divide(0,9)).to.equal(0)
+    });
+    */
+
+    /*
+    -- Failing
+    it("Dividend is bigger than divisor", () =>{
+        expect(divide(9,1)).to.equal(9)
+    });*/
 
 })
