@@ -56,7 +56,7 @@ describe("isEmpty tests", () => {
         expect(isEmpty(nulls[6])).to.equal(true)
     });
 
-    it("boolean", () => {
+    it("Boolean", () => {
         expect(isEmpty(true)).to.equal(true)
     });
 
@@ -76,4 +76,7 @@ describe("isEmpty tests", () => {
         expect(isEmpty(man)).to.equal(false)
     });
 
+    it("Testing with empty int8Array", () => {
+        expect(isEmpty(Int8Array)).to.equal(true)
+    });
 })
