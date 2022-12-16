@@ -8,6 +8,8 @@ const assert = chai.assert
 var nulls = [null, null, null, null, null]
 var nulls_map = new Map([[null, null],[null, null],[null, null]]);
 
+var man = {name: 'aman'}
+
 describe("isEmpty tests", () => {
 
     it("Null value", () => {
@@ -56,6 +58,22 @@ describe("isEmpty tests", () => {
 
     it("boolean", () => {
         expect(isEmpty(true)).to.equal(true)
+    });
+
+    it("Prototype test", () => {
+        function Person () {
+            this.name = 'Pekka',
+            this.age = 23
+        }
+        
+        const person = new Person();
+        Person.prototype.gender = 'male';
+    
+        expect(isEmpty(Object.getPrototypeOf(person))).to.equal(false)
+    });
+
+    it("Testing with object", () => {
+        expect(isEmpty(man)).to.equal(false)
     });
 
 })
