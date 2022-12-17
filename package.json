@@ -7,7 +7,7 @@
   "scripts": {
     "test": "mocha",
     "coverage": "c8 --exclude='src/.internal/' --exclude='test/' mocha ",
-    "coverage-report": "c8 report --exclude='src/.internal/' --exclude='test/' mocha "
+    "coverage-report": "c8 report --reporter=lcov --exclude='src/.internal/' --exclude='test/'"
   },
   "author": "",
   "license": "MIT",
