@@ -1,12 +1,10 @@
-# Student template
+# COMP.SE.200-2022-2023-1 testing project
 
 ## Purpose of this repository
 
-This is a project template for students participating in Software Testing course
-at Tampere University.
+This is a testing project of a library (https://github.com/otula/COMP.SE.200-2022-2023-1) for the Software Testing course at Tampere University.
 
-The repository only contains the source code that is under testing, `package.json` skeleton
-and LICENSE file.
+The repository contains the source code that is under testing and it's LICENSE files. The test folder contains the tests implemented by us.
 
 Source code folder contains a separate license file that must **NOT** be removed under any circumstances!
 Removing this license file directly violates terms and conditions of the software under testing.
