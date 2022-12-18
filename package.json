@@ -7,7 +7,7 @@
   "scripts": {
     "test": "mocha",
     "coverage": "c8 --all --include='src/capitalize.js' --include='src/clamp.js' --include='src/divide.js' --include='src/drop.js' --include='src/eq.js' --include='src/filter.js' --include='src/get.js' --include='src/isEmpty.js' --include='src/memoize.js' --include='src/toNumber.js' --exclude='src/.internal/' --exclude='test/' mocha ",
-    "coverage-report": "c8 report --reporter=lcov --all --exclude='src/' --exclude='test/' "
+    "coverage-report": "c8 report --reporter=lcov --all --include='src/capitalize.js' --include='src/clamp.js' --include='src/divide.js' --include='src/drop.js' --include='src/eq.js' --include='src/filter.js' --include='src/get.js' --include='src/isEmpty.js' --include='src/memoize.js' --include='src/toNumber.js' --exclude='src/.internal/' --exclude='test/'"
   },
   "author": "",
   "license": "MIT",
