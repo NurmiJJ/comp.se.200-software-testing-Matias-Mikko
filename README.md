@@ -10,8 +10,8 @@ Source code folder contains a separate license file that must **NOT** be removed
 Removing this license file directly violates terms and conditions of the software under testing.
 Individuals who remove or modify the license file will also carry the consequences.
 
-[![Coverage Status](https://coveralls.io/repos/github/NurmiJJ/comp.se.200-software-testing-Matias-Mikko/badge.svg?branch=main)](https://coveralls.io/github/NurmiJJ/comp.se.200-software-testing-Matias-Mikko?branch=main)
-
 ## Running the tests locally
-"npm test" for only unit test.
+"npm test" for only unit test.  
 "npm run coverage" for unit tests and the coverage.
+
+[![Coverage Status](https://coveralls.io/repos/github/NurmiJJ/comp.se.200-software-testing-Matias-Mikko/badge.svg?branch=main)](https://coveralls.io/github/NurmiJJ/comp.se.200-software-testing-Matias-Mikko?branch=main)
